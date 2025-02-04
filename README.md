@@ -1,57 +1,82 @@
-# Array and ArrayList Operations in Java
+# ArrayFunctions Project
 
-This Java program provides functionality to manipulate arrays and ArrayLists. It includes the following features:
+## Overview
 
-- **Segregate Even and Odd Numbers:** Separates even and odd numbers from an array into two distinct ArrayLists.
-- **Find Two Neighboring Numbers with the Smallest Difference:** Finds two neighboring numbers in an array with the smallest difference.
-- **Convert Array to ArrayList and Vice Versa:** Converts an array to an ArrayList and vice versa.
+This Java project implements three core functionalities related to arrays:
 
-## Project Structure
+1. **Segregate Even and Odd Numbers** - Separates even and odd numbers from an array into two separate lists.
+2. **Find Two Neighboring Numbers with the Smallest Difference** - Identifies two adjacent numbers in an array with the smallest absolute difference.
+3. **Convert Array to ArrayList and Vice Versa** - Converts an array into an ArrayList and back to an array.
 
-The project consists of three Java files:
+The project is structured with three Java files:
 
-1. **`ArrayFunctions.java`**: Contains the main functionalities of the program.
-2. **`Main.java`**: Acts as the entry point, where users can interact with the menu-driven program.
-3. **`UserInput.java`**: Handles user input, specifically taking an array of five integers from the user.
+- `ArrayFunctions.java` - Contains the main logic for the functionalities.
+- `Main.java` - Provides a menu-driven interface for user interaction.
+- `UserInput.java` - Handles user input operations.
 
 ## Features
 
-### 1. Segregate Even and Odd Numbers
-This functionality separates the even and odd numbers from an array into two different ArrayLists and displays them.
+- Menu-driven console application
+- Efficient array operations
+- User-friendly input handling
 
-### 2. Find Two Neighboring Numbers with the Smallest Difference
-This function finds the two neighboring numbers in an array with the smallest difference and prints the difference along with the numbers.
+## Installation & Usage
 
-### 3. Convert Array to ArrayList and Vice Versa
-This method demonstrates how to convert an array into an ArrayList and how to convert the ArrayList back to an array, printing the results for both conversions.
+### Prerequisites
 
-## How to Run the Program
+- Java Development Kit (JDK) installed
 
-1. Clone or download the repository to your local machine.
-2. Compile the Java files using the following commands:
+### Steps to Run
 
-    ```bash
-    javac UserInput.java ArrayFunctions.java Main.java
-    ```
+1. Clone this repository:
+   ```sh
+   git clone https://github.com/your-username/ArrayFunctions.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd ArrayFunctions
+   ```
+3. Compile the Java files:
+   ```sh
+   javac *.java
+   ```
+4. Run the program:
+   ```sh
+   java Main
+   ```
 
-3. Run the `Main` class using the command:
+## How It Works
 
-    ```bash
-    java Main
-    ```
+Upon running the program, the user is presented with a menu:
 
-4. Follow the on-screen menu to choose an option.
+- **Option 1:** Input numbers and get even and odd numbers separately.
+- **Option 2:** Find the smallest difference between two adjacent numbers.
+- **Option 3:** Convert an array to an ArrayList and back to an array.
+- **Option 4:** Exit the program.
 
-## Sample Output
+## Code Structure
 
-```bash
+- `ArrayFunctions` class:
+  - `evenOdd()` - Segregates even and odd numbers.
+  - `minimum()` - Finds two adjacent numbers with the smallest difference.
+  - `convertArrayToArrayList()` - Converts an array to an ArrayList and back.
+- `UserInput` class:
+  - `arrayInput()` - Takes user input and returns an integer array.
+- `Main` class:
+  - Provides a menu-based interface for executing different functionalities.
+
+## Example Run
+
+```
 Menu:
 1. Segregate Even and Odd Numbers
 2. Find Two Neighboring Numbers with the Smallest Difference
 3. Convert Array to ArrayList and Vice Versa
 4. Exit
 Please choose an option: 1
-Enter five numbers: 
-1 2 3 4 5
-Even numbers: [2, 4]
-Odd numbers: [1, 3, 5]
+Enter five numbers:
+10 15 20 25 30
+Even numbers: [10, 20, 30]
+Odd numbers: [15, 25]
+```
+
